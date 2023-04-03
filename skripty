@@ -1,0 +1,6 @@
+srazky_2020_groupby = srazky_2020.copy()
+# zmena datoveho typu indexu na datum
+srazky_2020_groupby.index = pd.to_datetime(srazky_2020_groupby.index)
+# extrakce cisla mesice z datumu na indexu
+srazky_2020_groupby.index  = srazky_2020_groupby.index.month
+srazky_2020_groupby.groupby(by='DATE').sum()
