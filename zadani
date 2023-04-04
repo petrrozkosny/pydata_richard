@@ -1,0 +1,38 @@
+1. Z dat na URL'https://raw.githubusercontent.com/petrrozkosny/pydata/main/pydata_data.csv'
+vytvořte dataframe df
+2. Omezte dataframe na sloupce: DATE,NAME,PRCP
+3. Zkontrolujte (vypište do konzole)
+	3.1. Datové typy
+	3.2. Prvních 5 řádků
+
+4. Za pomoci metody pd.to_datetime() převeďte datový typ sloupce DATE na datum
+5. Do dataframe dopočítejte nové sloupce:
+	5.1. MONTH (měsíc z hodnoty ve sloupci DATE)
+	5.2. YEAR  (rok z hodnoty ve sloupci DATE)
+	Pozn. oboje lze za pomoci df['DATE'].dt (plus dosadit .month či .year)
+6. Zafiltrujte dataframe tak, aby obsahoval pouze data za YEAR 2020
+
+
+7. Agregujte dataframe dle sloupce NAME, použijte agregace nad sloupcem PRCP
+	7.1. mean
+	7.2. max
+8. Seřaďte výsledný dataframe sestupně podle průměrné (mean) hodnoty
+
+
+BONUS: V kolika dnech v ruzyni v maximálním roce: neznáme hodnoty, nepršelo, pršelo
+(počítáme ze sloupce PRCP)
+
+
+_________________________________________________________________________________________________
+
+1. 1. Z dat na URL'https://raw.githubusercontent.com/petrrozkosny/pydata/main/pydata_data.csv'
+vytvořte dataframe df
+2. Vyberte z dataframe sloupce DATE,NAME,PRCP
+3. Upravte datový typ sloupce DATE na datum
+4. Dopočítejte sloupec YEAR (rok ze sloupce DATE)
+5. Omezte dataframe na NAME = 'RUZYNE' a rok 2010
+6. Vyberte z dataframe sloupce DATE,PRCP
+7. Spočítejte do proměnné "kumulativni suma" kumulativní sumu (cumsum)  hodnot ve sloupci PRCP
+___________________________________________________________________________________________________
+
+
